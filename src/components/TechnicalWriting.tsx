@@ -19,39 +19,28 @@ const SG = {
 type Writing = {
   title: string;
   desc: string;
-  date: string;
   readTime: string;
   href: string;
 };
 
 const TECHNICAL: Writing[] = [
   {
-    title: "How I think about full stack architecture",
-    desc: "A mental model for making decisions when building alone.",
-    date: "Mar 2026",
-    readTime: "6 min",
-    href: "#",
+    title: "Optimizing AAOS Updates with Fastboot in Modern Cars",
+    desc: "Role of Fastboot in Automotive Software Updates, Boot Optimization, and System Recovery.",
+    readTime: "7 min",
+    href: "https://samaritanhelpmission.org/donate",
   },
   {
-    title: "Why most side projects die in week two",
-    desc: "It's not motivation. It's the wrong kind of problem.",
-    date: "Jan 2026",
-    readTime: "4 min",
-    href: "#",
-  },
-  {
-    title: "Building with AI APIs — what no one tells you",
-    desc: "The gap between the demo and the thing people actually use.",
-    date: "Nov 2025",
-    readTime: "8 min",
-    href: "#",
-  },
-  {
-    title: "Projection systems in automotive UX",
-    desc: "What it's like to write software that ships inside a car.",
-    date: "Sep 2025",
+    title: "Automotive Industry’s Shift to SoCs",
+    desc: "The automotive industry is undergoing a major transformation, driven by the increasing complexity of modern vehicles and the need for advanced computing power.",
     readTime: "5 min",
-    href: "#",
+    href: "https://medium.com/@tanushree.tnay/automotive-industrys-shift-to-socs-14b178bd1cc4",
+  },
+  {
+    title: "Okto: The Smarter Way to Build for Web3",
+    desc: "The biggest challenge I faced in my Web3 development journey was the fragmentation of features. ",
+    readTime: "4 min",
+    href: "https://medium.com/@tanushree.tnay/unleashing-the-power-okto-simplifying-web3-development-for-all-499004e6872f",
   },
 ];
 
@@ -118,7 +107,6 @@ function WritingRow({ item, first }: { item: Writing; first: boolean }) {
                 opacity: 0.7,
               }}
             >
-              {item.date}
             </span>
             <span style={{ color: SG.border, fontSize: "10px" }}>·</span>
             <span
@@ -156,12 +144,9 @@ function WritingRow({ item, first }: { item: Writing; first: boolean }) {
 export default function TechnicalWritings() {
   return (
     <section
-      style={{
-        backgroundColor: SG.bg,
-        borderTop: `0.5px solid ${SG.border}`,
-      }}
+     
     >
-      <div className="max-w-[680px] mx-auto px-6 py-12 md:py-16">
+      <div className="max-w-[680px] mx-auto px-6 py-3 md:py-6">
 
         {/* Section header */}
         <div
