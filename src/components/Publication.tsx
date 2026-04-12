@@ -26,26 +26,12 @@ type Publication = {
 
 const PUBLICATIONS: Publication[] = [
   {
-    title: "Your Article Title Here",
-    publication: "Publication Name",
-    desc: "One line about what this piece covers and why it was worth writing.",
-    date: "Mar 2026",
-    href: "#",
-  },
-  {
-    title: "Another Published Piece",
-    publication: "Another Publication",
-    desc: "What's the thesis? What would someone take away from reading this?",
+    title: "Time Series Prediction of Port Container Throughput Using Machine Learning Models",
+    publication: "Springer Nature Link",
+    desc: "Time-series forecasting approaches for agro-product export container throughput through Cochin Port.",
     date: "Jan 2026",
-    href: "#",
-  },
-  {
-    title: "Third Published Work",
-    publication: "Platform or Journal",
-    desc: "Keep it punchy — the description should make someone want to click.",
-    date: "Nov 2025",
-    href: "#",
-  },
+    href: "https://link.springer.com/chapter/10.1007/978-981-96-8444-1_7",
+  }
 ];
 
 export default function Publications() {
@@ -56,7 +42,7 @@ export default function Publications() {
         borderTop: `0.5px solid ${SG.border}`,
       }}
     >
-      <div className="max-w-[680px] mx-auto px-6 py-12 md:py-16">
+      <div className="max-w-[680px] mx-auto px-6 py-8 md:py-12">
 
         {/* Section header */}
         <div
