@@ -21,10 +21,10 @@ const STACK = [
 ];
 
 const NOW = [
-  "Building my proof-of-work site",
-  "Working on automotive infotainment systems",
-  "Reading — add your current book here",
-  "Writing more, shipping more",
+  "Building a focus system using a script that tracks active windows and triggers an LED alert when I switch to distracting apps using raspberry pi.",
+  "Exploring Apple CarPlay Ultra.",
+  "Reading — Birds of Angel by Patti Smith",
+  "Writing (trying).",
 ];
 
 export default function About() {
@@ -32,8 +32,11 @@ export default function About() {
     <main style={{ backgroundColor: SG.bg }}>
 
       {/* ── HERO ─────────────────────────────────────────────── */}
-      <section style={{ borderBottom: `0.5px solid ${SG.border}` }}>
-        <div className="max-w-[680px] mx-auto px-6 pt-12 md:pt-20 pb-12 md:pb-16">
+      <section style={{
+        backgroundColor: SG.bg,
+        borderTop: `0.5px solid ${SG.border}`,
+      }}>
+        <div className="max-w-[680px] mx-auto px-6 pt-8 md:pt-12 pb-8 md:pb-12">
 
           <p
             className="mb-5 md:mb-7"
@@ -43,7 +46,7 @@ export default function About() {
           </p>
 
           <h1
-            className="mb-0"
+            className="mb-8 md:mb-10"
             style={{
               fontFamily: fontSerif,
               fontSize: "clamp(32px, 6vw, 50px)",
@@ -53,21 +56,7 @@ export default function About() {
               color: SG.heading,
             }}
           >
-            Developer, builder,
-          </h1>
-          <h1
-            className="mb-8 md:mb-10"
-            style={{
-              fontFamily: fontSerif,
-              fontSize: "clamp(32px, 6vw, 50px)",
-              fontWeight: 700,
-              fontStyle: "italic",
-              lineHeight: 1.1,
-              letterSpacing: "-0.5px",
-              color: SG.muted,
-            }}
-          >
-            occasional poet.
+            me, briefly. 
           </h1>
 
           {/* Bio paragraphs */}
@@ -80,9 +69,9 @@ export default function About() {
             }}
           >
             {[
-              "I'm Tanu Shree — a full stack developer based in Kolkata. I build things end to end: frontend, backend, embedded systems. I care about the whole thing working, not just my part of it.",
-              "By day I work on automotive infotainment and projection systems — software that ships inside real cars, close to the metal. Outside of that I build web products, write essays, and occasionally a poem.",
-              "I'm currently open to interesting projects and full-time roles. If something I've built or written resonates, reach out.",
+              "I build products end-to-end, with a focus on making complex things simple to use — especially when it comes to AI and high-conversion user flows. That’s shown up in work like ETHMumbai 2026, where I built the ticketing and communication system handling multiple sale drops, INR + crypto payments, and real user traffic.",
+              "Currently, I’m at Visteon, working on in-vehicle infotainment systems — including Apple CarPlay integration and API-level development for OEMs like Mahindra, Jaguar Land Rover, Škoda, and Tata.",,
+              "I enjoy working across both — building fast, user-facing products and systems that need to be reliable in the real world."
             ].map((para, i) => (
               <p
                 key={i}
@@ -103,9 +92,9 @@ export default function About() {
           <div className="flex flex-wrap gap-4 mt-8 md:mt-10">
             {[
               { label: "tanushree.wrk@gmail.com", href: "mailto:tanushree.wrk@gmail.com" },
-              { label: "x.com/@txnuushree",       href: "https://x.com/txnuushree" },
-              { label: "github/tanuushree",        href: "https://github.com/tanuushree" },
-              { label: "linkedin/tanuushree",      href: "https://www.linkedin.com/in/tanuushree/" },
+              { label: "x.com (twitter)",       href: "https://x.com/txnuushree" },
+              { label: "github",        href: "https://github.com/tanuushree" },
+              { label: "linkedin",      href: "https://www.linkedin.com/in/tanuushree/" },
             ].map((link) => (
               <a
                 key={link.label}
@@ -132,8 +121,8 @@ export default function About() {
       </section>
 
       {/* ── STACK ────────────────────────────────────────────── */}
-      <section style={{ borderBottom: `0.5px solid ${SG.border}` }}>
-        <div className="max-w-[680px] mx-auto px-6 py-12 md:py-14">
+      {/* <section style={{ borderBottom: `0.5px solid ${SG.border}` }}>
+        <div className="max-w-[680px] mx-auto px-6 py-3 md:py-6">
 
           <span
             style={{
@@ -188,11 +177,11 @@ export default function About() {
           </ul>
 
         </div>
-      </section>
+      </section> */}
 
       {/* ── NOW ──────────────────────────────────────────────── */}
       <section style={{ borderBottom: `0.5px solid ${SG.border}` }}>
-        <div className="max-w-[680px] mx-auto px-6 py-12 md:py-14">
+        <div className="max-w-[680px] mx-auto px-6 py-3 md:py-6">
 
           <span
             style={{
@@ -227,24 +216,80 @@ export default function About() {
       </section>
 
       {/* ── COLOPHON ─────────────────────────────────────────── */}
-      <section>
-        <div className="max-w-[680px] mx-auto px-6 py-8 md:py-10">
-          <p
-            style={{
-              fontFamily: fontMono,
-              fontSize: "11px",
-              fontStyle: "italic",
-              color: SG.muted,
-              opacity: 0.7,
-              lineHeight: 1.7,
-            }}
-          >
-            Built with Next.js, Tailwind CSS & Claude API.
-            Designed in Figma. Hosted on Vercel.
-            Set in Libre Baskerville and Chivo Mono.
-          </p>
-        </div>
-      </section>
+      {/* ── CONTACT ───────────────────────────────────────────── */}
+<section>
+  <div className="max-w-[680px] mx-auto px-6 py-8 md:py-10">
+
+    {/* Label */}
+    <p
+      className="mb-5"
+      style={{
+        fontFamily: fontMono,
+        fontSize: "11px",
+        letterSpacing: "0.08em",
+        color: SG.muted,
+      }}
+    >
+      Contact
+    </p>
+
+    {/* Heading */}
+    <h2
+      className="mb-6"
+      style={{
+        fontFamily: fontSerif,
+        fontSize: "clamp(22px, 4vw, 28px)",
+        fontWeight: 700,
+        color: SG.heading,
+      }}
+    >
+      Let’s work together.
+    </h2>
+
+    {/* Description */}
+    <p
+      className="mb-6 max-w-[520px]"
+      style={{
+        fontFamily: fontMono,
+        fontSize: "13px",
+        lineHeight: 1.7,
+        color: SG.muted,
+      }}
+    >
+      Looking to build something meaningful, ship fast, or improve how people experience your product? I’d love to hear from you.
+    </p>
+
+    {/* Links */}
+    <div className="flex flex-wrap gap-4">
+      {[
+       { label: "tanushree.wrk@gmail.com", href: "mailto:tanushree.wrk@gmail.com" },
+        { label: "x.com (twitter)",       href: "https://x.com/txnuushree" },
+        { label: "github",        href: "https://github.com/tanuushree" },
+        { label: "linkedin",      href: "https://www.linkedin.com/in/tanuushree/" },
+      ].map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target={link.href.startsWith("mailto") ? undefined : "_blank"}
+          rel="noopener noreferrer"
+          style={{
+            fontFamily: fontMono,
+            fontSize: "12px",
+            color: SG.accent,
+            textDecoration: "none",
+            borderBottom: `1px solid ${SG.border}`,
+            paddingBottom: "1px",
+            transition: "color 0.15s ease, border-color 0.15s ease",
+          }}
+       
+        >
+          {link.label} ↗
+        </a>
+      ))}
+    </div>
+
+  </div>
+</section>
 
     </main>
   );
