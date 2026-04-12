@@ -97,3 +97,6 @@ body {
 .dark .about-link:hover { color: #E1F2E2 !important; border-color: #9CD0A2 !important; }
 
 .theme-toggle:hover    { color: var(--color-heading); }
+
+.writing-row:hover .writing-arrow { color: #1E3A22; }
+.writing-row:hover { background-color: #E8F0E8; }
