@@ -20,7 +20,7 @@ export default function WritingHero() {
         borderBottom: `0.5px solid ${SG.border}`,
       }}
     >
-      <div className="max-w-[680px] mx-auto px-6 pt-12 md:pt-20 pb-10 md:pb-14">
+      <div className="max-w-[680px] mx-auto px-6 pt-8 md:pt-12 pb-8 md:pb-12">
 
         {/* Label */}
         <p
@@ -50,11 +50,11 @@ export default function WritingHero() {
           Things I felt like
         </h1>
         <h1
-          className="mb-6 md:mb-8"
+          className="mb-4 md:mb-6"
           style={{
             fontFamily: fontSerif,
             fontSize: "clamp(32px, 6vw, 50px)",
-            fontWeight: 700,
+            fontWeight: 500,
             fontStyle: "italic",
             lineHeight: 1.1,
             letterSpacing: "-0.5px",
