@@ -19,64 +19,53 @@ const SG = {
 type Piece = {
   title: string;
   desc: string;
-  date: string;
-  type: "poem" | "essay" | "note";
+  readTime: string;
+  type: "poem" | "article" | "essay";
   href: string;
 };
 
 const POEMS: Piece[] = [
-  {
-    title: "3am and the cursor blinks",
-    desc: "On the particular loneliness of debugging alone.",
-    date: "Feb 2026",
+{
+    title: "Perpetual Pursuit",
+    desc: "Romance, in its most seductive form, thrives on absence.",
+    readTime: "2 min",
     type: "poem",
-    href: "#",
+    href: "https://medium.com/@tanushree.tnay/perpetual-pursuit-02c83e5fcda0",
   },
-  {
-    title: "Kolkata, monsoon, deadline",
-    desc: "A city and a feeling and a pull request.",
-    date: "Aug 2025",
-    type: "poem",
-    href: "#",
-  },
-  {
-    title: "Commit history",
-    desc: "What git log says about who you were.",
-    date: "May 2025",
-    type: "poem",
-    href: "#",
-  },
-  {
-    title: "Things I wish I'd known at 18",
-    desc: "Not advice. Just observations from the other side.",
-    date: "Dec 2025",
-    type: "note",
-    href: "#",
-  },
-  {
-    title: "On finishing things",
-    desc: "A note to myself about shipping imperfect work.",
-    date: "Oct 2025",
+{
+    title: "you are out of cigarettes",
+    desc: "When everything in your life starts to go wrong, you’ll realise ’you are out of cigarettes’.",
+    readTime: "2 min",
     type: "essay",
-    href: "#",
+    href: "https://open.substack.com/pub/tanuushree/p/you-are-out-of-cigarettes?utm_campaign=post-expanded-share&utm_medium=post%20viewer",
+  },
+  {
+    title: "How We Made Pain Pretty and Branded Vulnerability",
+    desc: "We’ve made pain performative.",
+    readTime: "3 min",
+    type: "article",
+    href: "https://medium.com/@tanushree.tnay/how-we-made-pain-pretty-and-branded-vulnerability-f3583b4a15b3",
+  },
+  {
+    title: "almost a childhood.",
+    desc: "You don’t feel the ache in your bones because you never had something. You feel it because — you almost did.",
+    readTime: "2 min",
+    type: "essay",
+    href: "https://open.substack.com/pub/tanuushree/p/almost-a-childhood?utm_campaign=post-expanded-share&utm_medium=post%20viewer",
   },
 ];
 
 const TYPE_LABELS: Record<Piece["type"], string> = {
   poem:  "poem",
-  essay: "essay",
-  note:  "note",
+  article: "article",
+  essay:  "essay",
 };
 
 export default function Poems() {
   return (
     <section
-      style={{
-        backgroundColor: SG.bg,
-        borderTop: `0.5px solid ${SG.border}`,
-      }}
     >
-      <div className="max-w-[680px] mx-auto px-6 py-12 md:py-16">
+      <div className="max-w-[680px] mx-auto px-6 py-3 md:py-6">
 
         {/* Section header */}
         <div
@@ -140,8 +129,8 @@ export default function Poems() {
                     style={{
                       fontFamily: fontSerif,
                       fontSize: "clamp(14px, 2.5vw, 16px)",
-                      fontWeight: piece.type === "poem" ? 400 : 700,
-                      fontStyle: piece.type === "poem" ? "italic" : "normal",
+                      fontWeight: 700,
+                      fontStyle: "italic",
                       color: SG.heading,
                       lineHeight: 1.3,
                     }}
@@ -180,7 +169,7 @@ export default function Poems() {
                       opacity: 0.7,
                     }}
                   >
-                    {piece.date}
+                    {piece.readTime} read
                   </span>
                   <span
                     className="poem-arrow"
