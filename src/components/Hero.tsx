@@ -15,7 +15,6 @@ export default function Hero() {
   return (
     <section style={{
         backgroundColor: SG.bg,
-        borderTop: `0.5px solid ${SG.border}`,
       }}>
       <div
         className="

@@ -34,7 +34,6 @@ export default function About() {
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section style={{
         backgroundColor: SG.bg,
-        borderTop: `0.5px solid ${SG.border}`,
       }}>
         <div className="max-w-[680px] mx-auto px-6 pt-8 md:pt-12 pb-8 md:pb-12">
 
