@@ -1,5 +1,8 @@
 "use client"
 export default function Hero() {
+     const baseClasses =
+  "inline-block text-[12px] font-medium tracking-wide text-[#5A8C60] underline underline-offset-4 font-mono hover:bg-[#4A7A50] hover:text-white transition-colors duration-200 px-1";
+
   return (
     <section style={{ backgroundColor: "#F0F5F0" }}>
       <div
@@ -11,7 +14,7 @@ export default function Hero() {
       >
         {/* Label — Chivo Mono */}
         <p
-          className="mb-5 md:mb-7"
+          className="mb-4 md:mb-6"
           style={{
             fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
             fontSize: "11px",
@@ -39,12 +42,12 @@ export default function Hero() {
 
         {/* Italic line — Libre Baskerville Italic */}
         <h1
-          className="mb-6 md:mb-8"
+          className="mb-4 md:mb-6"
           style={{
             fontFamily: "var(--font-baskerville), Georgia, serif",
             fontSize: "clamp(32px, 6vw, 50px)",
             lineHeight: 1.1,
-            fontWeight: 700,
+            fontWeight: 500,
             fontStyle: "italic",
             color: "#4A6B50",
             letterSpacing: "-0.5px",
@@ -55,7 +58,7 @@ export default function Hero() {
 
         {/* Description — Chivo Mono */}
         <p
-          className="mb-8 md:mb-10 max-w-[480px]"
+          className="mb-4 md:mb-6 max-w-[480px]"
           style={{
             fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
             fontSize: "clamp(12px, 2vw, 13px)",
@@ -68,30 +71,9 @@ export default function Hero() {
           end-to-end — from the first commit to the thing people actually use.
         </p>
 
-        {/* CTA — filled button, Chivo Mono */}
-        <a
-          href="#work"
-          style={{
-            display: "inline-block",
-            fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
-            fontSize: "12px",
-            fontWeight: 500,
-            letterSpacing: "0.04em",
-            backgroundColor: "#5A8C60",
-            color: "#F0F5F0",
-            padding: "10px 22px",
-            borderRadius: "3px",
-            textDecoration: "none",
-            transition: "background-color 0.15s ease",
-          }}
-          onMouseEnter={(e) =>
-            ((e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#4A7A50")
-          }
-          onMouseLeave={(e) =>
-            ((e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#5A8C60")
-          }
-        >
-          See my work  ↓
+        {/* CTA */}
+        <a href="#work" className={baseClasses}>
+            See my work ↓
         </a>
       </div>
     </section>
