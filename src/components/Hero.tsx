@@ -48,7 +48,7 @@ export default function Hero() {
             letterSpacing: "-0.5px",
           }}
         >
-          I Build products that
+          i build products that
         </h1>
 
         {/* Italic line — Libre Baskerville Italic */}

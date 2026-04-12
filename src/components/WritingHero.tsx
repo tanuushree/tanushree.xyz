@@ -46,7 +46,7 @@ export default function WritingHero() {
             color: SG.heading,
           }}
         >
-          Things I felt like
+          things I felt like
         </h1>
         <h1
           className="mb-4 md:mb-6"
