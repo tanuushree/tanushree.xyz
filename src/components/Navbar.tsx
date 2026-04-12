@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeToggle from "../components/ThemeToggle";
 import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
   { label: "work", href: "/" },
   { label: "about", href: "/about" },
-  { label: "writing", href: "/writing" },
+  { label: "writings", href: "/writings" },
 ];
 
 const SOCIALS = [
@@ -90,9 +91,10 @@ export default function Navbar() {
                       style={{ width: isActive ? "100%" : "0" }}
                     />
                   </Link>
-                </li>
+                </li>    
               );
             })}
+            <ThemeToggle />
           </ul>
 
           {/* Hamburger */}
