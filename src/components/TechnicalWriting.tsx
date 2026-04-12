@@ -99,16 +99,7 @@ function WritingRow({ item, first }: { item: Writing; first: boolean }) {
 
           {/* Meta */}
           <div className="flex items-center gap-3">
-            <span
-              style={{
-                fontFamily: fontMono,
-                fontSize: "10px",
-                color: SG.muted,
-                opacity: 0.7,
-              }}
-            >
-            </span>
-            <span style={{ color: SG.border, fontSize: "10px" }}>·</span>
+            
             <span
               style={{
                 fontFamily: fontMono,
