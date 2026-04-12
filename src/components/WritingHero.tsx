@@ -17,7 +17,7 @@ export default function WritingHero() {
     <section
       style={{
         backgroundColor: SG.bg,
-        borderBottom: `0.5px solid ${SG.border}`,
+        borderTop: `0.5px solid ${SG.border}`,
       }}
     >
       <div className="max-w-[680px] mx-auto px-6 pt-8 md:pt-12 pb-8 md:pb-12">

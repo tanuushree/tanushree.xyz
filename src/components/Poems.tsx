@@ -63,8 +63,7 @@ const TYPE_LABELS: Record<Piece["type"], string> = {
 
 export default function Poems() {
   return (
-    <section
-    >
+    <section>
       <div className="max-w-[680px] mx-auto px-6 py-3 md:py-6">
 
         {/* Section header */}
