@@ -16,7 +16,7 @@ const PROJECTS: Project[] = [
     name: "Samaritan Help Mission",
     desc: "Redesigned and developed more reliable donation experience for Samaritan Help Mission, streamlining how users contribute. Integrated the flow with their admin dashboard to reduce manual work and operational overhead, resulting in a 17% increase in donations.",
     tags: ["Next.js", "PHP", "MySQL", "Razorpay"],
-    href: "#",
+    href: "https://samaritanhelpmission.org/donate",
   }
 ];
 
