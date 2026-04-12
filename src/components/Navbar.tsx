@@ -94,7 +94,7 @@ export default function Navbar() {
                 </li>    
               );
             })}
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </ul>
 
           {/* Hamburger */}

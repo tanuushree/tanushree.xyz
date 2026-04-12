@@ -1,10 +1,22 @@
 "use client"
+const SG = {
+  bg:      "#F0F5F0",
+  surface: "#D4E5D4",
+  border:  "#A8C8A8",
+  accent:  "#5A8C60",
+  heading: "#1E3A22",
+  muted:   "#4A6B50",
+};
+
 export default function Hero() {
      const baseClasses =
   "inline-block text-[12px] font-medium tracking-wide text-[#5A8C60] underline underline-offset-4 font-mono hover:bg-[#4A7A50] hover:text-white transition-colors duration-200 px-1";
 
   return (
-    <section style={{ backgroundColor: "#F0F5F0" }}>
+    <section style={{
+        backgroundColor: SG.bg,
+        borderTop: `0.5px solid ${SG.border}`,
+      }}>
       <div
         className="
           max-w-[680px] mx-auto px-6
@@ -37,7 +49,7 @@ export default function Hero() {
             letterSpacing: "-0.5px",
           }}
         >
-          Building things that
+          I Build products that
         </h1>
 
         {/* Italic line — Libre Baskerville Italic */}
@@ -67,8 +79,7 @@ export default function Hero() {
             letterSpacing: "0.01em",
           }}
         >
-          Full stack developer based in Kolkata. I build products
-          end-to-end — from the first commit to the thing people actually use.
+          Building products end-to-end. From full-stack applications with high-conversion user flows, to scalable backend systems and efficient data pipelines. By day, I work on infotainment systems and Apple CarPlay integration running inside your vehicles.
         </p>
 
         {/* CTA */}
