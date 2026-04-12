@@ -13,9 +13,9 @@ const PROJECTS: Project[] = [
     href: "https://www.ethmumbai.in/",
   },
   {
-    name: "Project Two",
-    desc: "What problem did this solve? One sentence, honest, specific.",
-    tags: ["Next.js", "Tailwind", "AI"],
+    name: "Samaritan Help Mission",
+    desc: "Redesigned and developed more reliable donation experience for Samaritan Help Mission, streamlining how users contribute. Integrated the flow with their admin dashboard to reduce manual work and operational overhead, resulting in a 17% increase in donations.",
+    tags: ["Next.js", "PHP", "MySQL", "Razorpay"],
     href: "#",
   }
 ];
@@ -42,11 +42,11 @@ export default function Work() {
         borderTop: `0.5px solid ${SG.border}`,
       }}
     >
-      <div className="max-w-[680px] mx-auto px-6 py-8 md:py-12">
+      <div className="max-w-[680px] mx-auto px-6 py-8 md:py-10">
 
         {/* Section header */}
         <div
-          className="flex items-baseline justify-between mb-4 md:mb-6"
+          className="flex items-baseline justify-between mb-2 md:mb-4"
           style={{ borderBottom: `0.5px solid ${SG.border}`, paddingBottom: "12px" }}
         >
           <span
@@ -168,7 +168,7 @@ export default function Work() {
 
         {/* Automotive callout */}
         <div
-          className="mt-10 md:mt-12"
+          className="mt-4 md:mt-6"
           style={{
             borderTop: `0.5px solid ${SG.border}`,
             paddingTop: "32px",
@@ -216,8 +216,11 @@ export default function Work() {
                 letterSpacing: "0.01em",
               }}
             >
-              Projection systems &amp; infotainment features for in-car UX —
-              close to the metal, shipping on real hardware.
+            By day, I work on in-vehicle infotainment and projection systems, 
+            building everything from Apple CarPlay integrations to Android core APIs. 
+            These features run on real vehicles for OEMs like Mahindra & Mahindra, 
+            Jaguar Land Rover, Škoda, and Tata. I write more about it 
+            <a href="/writings" style={{ color: SG.accent }}> here</a>.
             </p>
           </div>
         </div>
