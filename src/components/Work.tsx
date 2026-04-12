@@ -197,15 +197,18 @@ export default function Work() {
             }}
           >
             <p
-              className="mb-2"
-              style={{
+            className="mb-2"
+            style={{
                 fontFamily: fontSerif,
                 fontSize: "15px",
                 fontWeight: 700,
                 color: SG.heading,
-              }}
+            }}
             >
-              Automotive & Embedded Systems
+            Visteon Corporation
+            <span className="block italic text-xs font-light opacity-80">
+                Software Engineer I
+            </span>
             </p>
             <p
               style={{
