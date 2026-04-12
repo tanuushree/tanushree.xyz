@@ -1,23 +1,23 @@
 // Pure Server Component
 
 const fontSerif = "var(--font-baskerville), Georgia, serif";
-const fontMono  = "var(--font-chivo-mono), 'Courier New', monospace";
+const fontMono = "var(--font-chivo-mono), 'Courier New', monospace";
 
 const SG = {
-  bg:      "#F0F5F0",
+  bg: "#F0F5F0",
   surface: "#D4E5D4",
-  border:  "#A8C8A8",
-  accent:  "#5A8C60",
+  border: "#A8C8A8",
+  accent: "#5A8C60",
   heading: "#1E3A22",
-  muted:   "#4A6B50",
+  muted: "#4A6B50",
 };
 
 const STACK = [
-  { name: "Next.js / React",            type: "frontend" },
-  { name: "Node.js / FastAPI",          type: "backend"  },
-  { name: "Supabase / Postgres",        type: "data"     },
-  { name: "Projection / Infotainment",  type: "embedded" },
-  { name: "Claude API",                 type: "ai"       },
+  { name: "Next.js / React", type: "frontend" },
+  { name: "Node.js / FastAPI", type: "backend" },
+  { name: "Supabase / Postgres", type: "data" },
+  { name: "Projection / Infotainment", type: "embedded" },
+  { name: "Claude API", type: "ai" },
 ];
 
 const NOW = [
@@ -56,7 +56,7 @@ export default function About() {
               color: SG.heading,
             }}
           >
-            me, briefly. 
+            me, briefly.
           </h1>
 
           {/* Bio paragraphs */}
@@ -70,7 +70,7 @@ export default function About() {
           >
             {[
               "I build products end-to-end, with a focus on making complex things simple to use — especially when it comes to AI and high-conversion user flows. That’s shown up in work like ETHMumbai 2026, where I built the ticketing and communication system handling multiple sale drops, INR + crypto payments, and real user traffic.",
-              "Currently, I’m at Visteon, working on in-vehicle infotainment systems — including Apple CarPlay integration and API-level development for OEMs like Mahindra, Jaguar Land Rover, Škoda, and Tata.",,
+              "Currently, I’m at Visteon, working on in-vehicle infotainment systems — including Apple CarPlay integration and API-level development for OEMs like Mahindra, Jaguar Land Rover, Škoda, and Tata.", ,
               "I enjoy working across both — building fast, user-facing products and systems that need to be reliable in the real world."
             ].map((para, i) => (
               <p
@@ -92,9 +92,9 @@ export default function About() {
           <div className="flex flex-wrap gap-4 mt-8 md:mt-10">
             {[
               { label: "tanushree.wrk@gmail.com", href: "mailto:tanushree.wrk@gmail.com" },
-              { label: "x.com (twitter)",       href: "https://x.com/txnuushree" },
-              { label: "github",        href: "https://github.com/tanuushree" },
-              { label: "linkedin",      href: "https://www.linkedin.com/in/tanuushree/" },
+              { label: "x.com (twitter)", href: "https://x.com/txnuushree" },
+              { label: "github", href: "https://github.com/tanuushree" },
+              { label: "linkedin", href: "https://www.linkedin.com/in/tanuushree/" },
             ].map((link) => (
               <a
                 key={link.label}
@@ -215,81 +215,82 @@ export default function About() {
         </div>
       </section>
 
-      {/* ── COLOPHON ─────────────────────────────────────────── */}
-      {/* ── CONTACT ───────────────────────────────────────────── */}
-<section>
-  <div className="max-w-[680px] mx-auto px-6 py-8 md:py-10">
+      <section >
+        <div className="max-w-[680px] mx-auto px-6 py-8 md:py-10" >
 
-    {/* Label */}
-    <p
-      className="mb-5"
-      style={{
-        fontFamily: fontMono,
-        fontSize: "11px",
-        letterSpacing: "0.08em",
-        color: SG.muted,
-      }}
-    >
-      Contact
-    </p>
+          {/* Label */}
+          <p
+            className="mb-5"
+            style={{
+              fontFamily: fontMono,
+              fontSize: "11px",
+              letterSpacing: "0.08em",
+              borderBottom: `0.5px solid ${SG.border}`,
+              marginBottom: "20px",
+              paddingBottom: "12px",
+              color: SG.muted,
+            }}
+          >
+            Contact
+          </p>
 
-    {/* Heading */}
-    <h2
-      className="mb-6"
-      style={{
-        fontFamily: fontSerif,
-        fontSize: "clamp(22px, 4vw, 28px)",
-        fontWeight: 700,
-        color: SG.heading,
-      }}
-    >
-      Let’s work together.
-    </h2>
+          {/* Heading */}
+          <h2
+            className="mb-6"
+            style={{
+              fontFamily: fontSerif,
+              fontSize: "clamp(22px, 4vw, 28px)",
+              fontWeight: 700,
+              color: SG.heading,
+            }}
+          >
+            Let’s work together.
+          </h2>
 
-    {/* Description */}
-    <p
-      className="mb-6 max-w-[520px]"
-      style={{
-        fontFamily: fontMono,
-        fontSize: "13px",
-        lineHeight: 1.7,
-        color: SG.muted,
-      }}
-    >
-      Looking to build something meaningful, ship fast, or improve how people experience your product? I’d love to hear from you.
-    </p>
+          {/* Description */}
+          <p
+            className="mb-6 max-w-[520px]"
+            style={{
+              fontFamily: fontMono,
+              fontSize: "13px",
+              lineHeight: 1.7,
+              color: SG.muted,
+            }}
+          >
+            Looking to build something meaningful, ship fast, or improve how people experience your product? I’d love to hear from you.
+          </p>
 
-    {/* Links */}
-    <div className="flex flex-wrap gap-4">
-      {[
-       { label: "tanushree.wrk@gmail.com", href: "mailto:tanushree.wrk@gmail.com" },
-        { label: "x.com (twitter)",       href: "https://x.com/txnuushree" },
-        { label: "github",        href: "https://github.com/tanuushree" },
-        { label: "linkedin",      href: "https://www.linkedin.com/in/tanuushree/" },
-      ].map((link) => (
-        <a
-          key={link.label}
-          href={link.href}
-          target={link.href.startsWith("mailto") ? undefined : "_blank"}
-          rel="noopener noreferrer"
-          style={{
-            fontFamily: fontMono,
-            fontSize: "12px",
-            color: SG.accent,
-            textDecoration: "none",
-            borderBottom: `1px solid ${SG.border}`,
-            paddingBottom: "1px",
-            transition: "color 0.15s ease, border-color 0.15s ease",
-          }}
-       
-        >
-          {link.label} ↗
-        </a>
-      ))}
-    </div>
+          {/* Links */}
+          <div className="flex flex-wrap gap-4">
+            {[
+              { label: "tanushree.wrk@gmail.com", href: "mailto:tanushree.wrk@gmail.com" },
+              { label: "x.com (twitter)", href: "https://x.com/txnuushree" },
+              { label: "github", href: "https://github.com/tanuushree" },
+              { label: "linkedin", href: "https://www.linkedin.com/in/tanuushree/" },
+            ].map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("mailto") ? undefined : "_blank"}
+                rel="noopener noreferrer"
+                style={{
+                  fontFamily: fontMono,
+                  fontSize: "12px",
+                  color: SG.accent,
+                  textDecoration: "none",
+                  borderBottom: `1px solid ${SG.border}`,
+                  paddingBottom: "1px",
+                  transition: "color 0.15s ease, border-color 0.15s ease",
+                }}
 
-  </div>
-</section>
+              >
+                {link.label} ↗
+              </a>
+            ))}
+          </div>
+
+        </div>
+      </section>
 
     </main>
   );
