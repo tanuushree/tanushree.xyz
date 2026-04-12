@@ -1,6 +1,7 @@
+"use client"
 export default function Hero() {
   return (
-    <section className="bg-[#F5F7F5]">
+    <section style={{ backgroundColor: "#F0F5F0" }}>
       <div
         className="
           max-w-[680px] mx-auto px-6
@@ -8,37 +9,89 @@ export default function Hero() {
           pb-10 md:pb-12
         "
       >
-        {/* Small label */}
-        <p className="text-[12px] md:text-[13px] text-[#6B7280] mb-5 md:mb-6">
+        {/* Label — Chivo Mono */}
+        <p
+          className="mb-5 md:mb-7"
+          style={{
+            fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
+            fontSize: "11px",
+            letterSpacing: "0.08em",
+            color: "#4A6B50",
+          }}
+        >
           Developer & Builder
         </p>
 
-        {/* Heading */}
-        <h1 className="text-[28px] sm:text-[34px] md:text-[42px] leading-[1.2] font-semibold text-[#1E1E1E] mb-1 md:mb-2">
+        {/* Heading — Libre Baskerville Bold */}
+        <h1
+          className="mb-0"
+          style={{
+            fontFamily: "var(--font-baskerville), Georgia, serif",
+            fontSize: "clamp(32px, 6vw, 50px)",
+            lineHeight: 1.1,
+            fontWeight: 700,
+            color: "#1E3A22",
+            letterSpacing: "-0.5px",
+          }}
+        >
           Building things that
         </h1>
-        <h1 className="text-[28px] sm:text-[34px] md:text-[42px] leading-[1.2] font-semibold text-[#6B7280] mb-5 md:mb-6">
+
+        {/* Italic line — Libre Baskerville Italic */}
+        <h1
+          className="mb-6 md:mb-8"
+          style={{
+            fontFamily: "var(--font-baskerville), Georgia, serif",
+            fontSize: "clamp(32px, 6vw, 50px)",
+            lineHeight: 1.1,
+            fontWeight: 700,
+            fontStyle: "italic",
+            color: "#4A6B50",
+            letterSpacing: "-0.5px",
+          }}
+        >
           actually work.
         </h1>
 
-        {/* Description */}
-        <p className="text-[14px] md:text-[15px] text-[#4B5563] leading-[1.7] mb-6 md:mb-8 max-w-[520px]">
+        {/* Description — Chivo Mono */}
+        <p
+          className="mb-8 md:mb-10 max-w-[480px]"
+          style={{
+            fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
+            fontSize: "clamp(12px, 2vw, 13px)",
+            lineHeight: 1.8,
+            color: "#4A6B50",
+            letterSpacing: "0.01em",
+          }}
+        >
           Full stack developer based in Kolkata. I build products
           end-to-end — from the first commit to the thing people actually use.
         </p>
 
-        {/* CTA */}
+        {/* CTA — filled button, Chivo Mono */}
         <a
           href="#work"
-          className="
-            text-[13px] md:text-[14px]
-            text-[#1E1E1E]
-            underline underline-offset-4
-            hover:text-[#4A6B50]
-            transition
-          "
+          style={{
+            display: "inline-block",
+            fontFamily: "var(--font-chivo-mono), 'Courier New', monospace",
+            fontSize: "12px",
+            fontWeight: 500,
+            letterSpacing: "0.04em",
+            backgroundColor: "#5A8C60",
+            color: "#F0F5F0",
+            padding: "10px 22px",
+            borderRadius: "3px",
+            textDecoration: "none",
+            transition: "background-color 0.15s ease",
+          }}
+          onMouseEnter={(e) =>
+            ((e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#4A7A50")
+          }
+          onMouseLeave={(e) =>
+            ((e.currentTarget as HTMLAnchorElement).style.backgroundColor = "#5A8C60")
+          }
         >
-          See my work ↓
+          See my work  ↓
         </a>
       </div>
     </section>
