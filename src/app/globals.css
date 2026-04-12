@@ -24,3 +24,76 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
+.project-row:hover {
+    background-color: #E8F0E8;
+}
+.project-row:hover .project-arrow {
+    color: #1E3A22;
+}
+
+.pub-card:hover    { background-color: #E8F0E8; }
+.pub-card:hover .pub-arrow    { color: #1E3A22; }
+
+.writing-row:hover { background-color: #E8F0E8; }
+.writing-row:hover .writing-arrow { color: #1E3A22; }
+
+.poem-card:hover   { background-color: #E8F0E8; }
+
+/* ── Sage Garden CSS variables ───────────────────────────────────
+   Add these to your existing globals.css
+   ─────────────────────────────────────────────────────────────── */
+
+:root {
+  --color-bg:      #F0F5F0;
+  --color-surface: #D4E5D4;
+  --color-border:  #A8C8A8;
+  --color-accent:  #5A8C60;
+  --color-heading: #1E3A22;
+  --color-muted:   #4A6B50;
+}
+
+/* Deep Forest dark mode */
+.dark {
+  --color-bg:      #111C14;
+  --color-surface: #19281C;
+  --color-border:  #2D4431;
+  --color-accent:  #9CD0A2;
+  --color-heading: #E1F2E2;
+  --color-muted:   #87AF8C;
+}
+
+/* Apply bg to root so page doesn't flash white */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-heading);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* ── Hover states ────────────────────────────────────────────── */
+.hero-cta:hover        { background-color: #4A7A50 !important; }
+
+.project-row:hover     { background-color: #E8F0E8; }
+.dark .project-row:hover { background-color: #1E3020; }
+.project-row:hover .project-arrow { color: #1E3A22; }
+.dark .project-row:hover .project-arrow { color: #E1F2E2; }
+
+.pub-card:hover        { background-color: #E8F0E8; }
+.dark .pub-card:hover  { background-color: #1E3020; }
+.pub-card:hover .pub-arrow { color: #1E3A22; }
+.dark .pub-card:hover .pub-arrow { color: #E1F2E2; }
+
+.writing-row:hover     { background-color: #E8F0E8; }
+.dark .writing-row:hover { background-color: #1E3020; }
+.writing-row:hover .writing-arrow { color: #1E3A22; }
+.dark .writing-row:hover .writing-arrow { color: #E1F2E2; }
+
+.poem-card:hover       { background-color: #E8F0E8; }
+.dark .poem-card:hover { background-color: #1E3020; }
+.poem-card:hover .poem-arrow { color: #1E3A22; }
+.dark .poem-card:hover .poem-arrow { color: #E1F2E2; }
+
+.about-link:hover      { color: #1E3A22 !important; border-color: #5A8C60 !important; }
+.dark .about-link:hover { color: #E1F2E2 !important; border-color: #9CD0A2 !important; }
+
+.theme-toggle:hover    { color: var(--color-heading); }
