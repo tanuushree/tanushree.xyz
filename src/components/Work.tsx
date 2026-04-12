@@ -1,13 +1,3 @@
-// Pure Server Component — no "use client" needed
-// Add these to your globals.css:
-//
-// .project-row:hover {
-//   background-color: #E8F0E8;
-// }
-// .project-row:hover .project-arrow {
-//   color: #1E3A22;
-// }
-
 type Project = {
   name: string;
   desc: string;
@@ -17,29 +7,17 @@ type Project = {
 
 const PROJECTS: Project[] = [
   {
-    name: "Project One",
-    desc: "A short punchy line about what this does and who it's for.",
-    tags: ["React", "Node.js", "Postgres"],
-    href: "#",
+    name: "ETHMumbai 2026",
+    desc: "Official website for ETHMumbai 2026 - BEST Conference and Hackathon. Focused on making ticketing seamless at scale. Integrated Razorpay and DAIMO Pay for both INR and crypto payments, and handled high-demand drops like Christmas and launch. Sold 500+ tickets (50 within the first hour), reached 50K+ impressions, and managed the entire communication flow end-to-end.",
+    tags: ["Next.js", "Nest.js", "PostgreSQL", "Razorpay", "DAIMO Pay"],
+    href: "https://www.ethmumbai.in/",
   },
   {
     name: "Project Two",
     desc: "What problem did this solve? One sentence, honest, specific.",
     tags: ["Next.js", "Tailwind", "AI"],
     href: "#",
-  },
-  {
-    name: "Project Three",
-    desc: "What makes this worth showing? Results if you have them.",
-    tags: ["TypeScript", "Supabase"],
-    href: "#",
-  },
-  {
-    name: "Project Four",
-    desc: "Open source? Side project? Something you're genuinely proud of.",
-    tags: ["Python", "FastAPI", "Open Source"],
-    href: "#",
-  },
+  }
 ];
 
 // ── Shared style tokens ───────────────────────────────────────────
@@ -64,11 +42,11 @@ export default function Work() {
         borderTop: `0.5px solid ${SG.border}`,
       }}
     >
-      <div className="max-w-[680px] mx-auto px-6 py-12 md:py-16">
+      <div className="max-w-[680px] mx-auto px-6 py-8 md:py-12">
 
         {/* Section header */}
         <div
-          className="flex items-baseline justify-between mb-8 md:mb-10"
+          className="flex items-baseline justify-between mb-4 md:mb-6"
           style={{ borderBottom: `0.5px solid ${SG.border}`, paddingBottom: "12px" }}
         >
           <span
@@ -79,7 +57,7 @@ export default function Work() {
               color: SG.muted,
             }}
           >
-            Selected Work
+            Things I have recently worked on
           </span>
           <span
             style={{
